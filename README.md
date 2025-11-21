@@ -1,37 +1,106 @@
-## Welcome to GitHub Pages
+# Binar Purwaka - GitHub Pages Portfolio
 
-You can use the [editor on GitHub](https://github.com/binarpurwaka/binarpurwaka.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Website portfolio modern dengan tema dark/light mode dan desain responsif untuk GitHub Pages.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Fitur
 
-### Markdown
+- ✨ **Modern Design** - UI/UX yang modern dan menarik
+- 🌓 **Dark/Light Theme** - Toggle tema gelap dan terang
+- 📱 **Responsive Design** - Optimal di semua perangkat
+- 🎨 **Smooth Animations** - Animasi halus dan interaktif
+- ⚡ **Fast Loading** - Optimized untuk performa cepat
+- ♿ **Accessible** - Mengikuti best practices aksesibilitas
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Struktur File
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+.
+├── index.html      # Halaman utama
+├── styles.css      # Styling dengan tema dark/light
+├── script.js       # JavaScript untuk interaktivitas
+└── README.md       # Dokumentasi
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Cara Deploy ke GitHub Pages
 
-### Jekyll Themes
+1. **Buat repository baru** di GitHub dengan nama `binarpurwaka.github.io`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/binarpurwaka/binarpurwaka.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+2. **Clone repository** ke komputer Anda:
+   ```bash
+   git clone https://github.com/binarpurwaka/binarpurwaka.github.io.git
+   cd binarpurwaka.github.io
+   ```
 
-### Support or Contact
+3. **Copy semua file** dari folder ini ke repository:
+   - `index.html`
+   - `styles.css`
+   - `script.js`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+4. **Commit dan push** ke GitHub:
+   ```bash
+   git add .
+   git commit -m "Initial commit: Add portfolio website"
+   git push origin main
+   ```
+
+5. **Aktifkan GitHub Pages**:
+   - Buka Settings di repository GitHub Anda
+   - Scroll ke bagian "Pages"
+   - Pilih branch `main` sebagai source
+   - Klik Save
+
+6. **Tunggu beberapa menit** dan website akan tersedia di:
+   `https://binarpurwaka.github.io`
+
+## Kustomisasi
+
+### Mengubah Informasi Pribadi
+
+Edit file `index.html` dan ubah:
+- Nama dan deskripsi di section hero
+- Informasi about
+- Skills dan tools
+- Projects
+- Contact information
+
+### Mengubah Warna Tema
+
+Edit file `styles.css` dan ubah variabel CSS di `:root` dan `[data-theme="dark"]`:
+- `--accent-primary`: Warna utama
+- `--accent-secondary`: Warna sekunder
+- `--bg-primary`: Background utama
+- `--text-primary`: Warna teks utama
+
+### Menambahkan Project
+
+Tambahkan card project baru di section `#projects`:
+```html
+<div class="project-card">
+    <div class="project-header">
+        <h3>Nama Project</h3>
+        <span class="project-badge">Technology</span>
+    </div>
+    <p class="project-description">Deskripsi project</p>
+    <div class="project-footer">
+        <a href="link-github" target="_blank" class="project-link">
+            View on GitHub →
+        </a>
+    </div>
+</div>
+```
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+
+Free to use for personal and commercial projects.
+
+---
+
+**Dibuat dengan ❤️ untuk Binar Purwaka**
+
